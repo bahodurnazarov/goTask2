@@ -6,7 +6,7 @@ import (
 )
 
 
-func Control(card *types.Card) *types.Card{
+func ExampleControl(card *types.Card) *types.Card{
 	if card.Activity != true{
 		fmt.Println("Card is not Active")
 		card.Activity = true
@@ -16,4 +16,7 @@ func Control(card *types.Card) *types.Card{
 	}
 	
 	return card
+
+	// Output: Card is not Active
+
 }
